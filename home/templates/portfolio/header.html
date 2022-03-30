@@ -1,0 +1,59 @@
+{% load static %}
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="home-nav">
+            <div class="container">
+                <a class="navbar-brand fs-3" href="{% url 'home' %}" style="color: rgb(179,11,120);"><i class="fa-solid fa-cubes"></i>kerry.com</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>     
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mt-1">
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#about-link"><button class="btn-about">About me</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#service-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#skill-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#resume-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#work-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-links" href="#contact-link">Contact me</a>
+                </li>
+                </ul>
+                <div class="d-lg-flex justify-content-around socials">
+                    <a href="https://web.facebook.com/profile.php?id=100075164586297"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/kerry_onyeogo"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/kerry-onyeogo-41988822b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kerry407"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            </div>
+        </nav>
+            <!-- banner -->
+            <div class="row banner d-flex justify-content-between mt-4">
+                <div class="text col-lg-6">
+                    <h5>Hey, I'm</h5>
+                    <h1 class="mt-5">
+                        Onyeogo <br> Kerry
+                    </h1>
+                    <h4 class="mt-5">
+                        A Full-stack <span>Web Developer</span> based in Lagos, Nigeria.
+                    </h4>
+                    <h6 class="pe-3 pt-1">I am a student and a junior developer looking for new opportunities in the tech space, hoping to learn new skills and advance in my tech career.
+                    </h6>
+                </div>
+                <div class="graphic-content col-lg-6">
+                    <img src="{% static 'images/computer-science-engineering-cartoon-standing-person-furniture-electronics-transparent-png-1424499.png' %}" alt="programmer" class="img-fluid mt-3">
+                </div>
+            </div>
+    </header>

@@ -1,0 +1,22 @@
+{% load static %}
+
+
+
+    <!-- About me -->
+    <section class="row d-flex justify-content-center about" id="about-link">
+        {% for abouts in about %}
+            <div class="col-lg-6 about-img">
+                <img src="{{abouts.about_img.url}}" alt="kerry">
+            </div>
+            <div class="col-lg-6 about-text">
+                <h2 class="fw-bold">Some things you should know about me</h2>
+                <hr class="title-hr"><h5 class="chapter"> 01</h5> <hr class="title-hr">
+                <h5 class="about-writeup">
+                    <h4>Hi, my name is Kerry,</h4>
+                    <h6>
+                        {{abouts.about_text}}
+                    </h6>
+                </h5>
+            </div>
+        {% endfor %}
+    </section>

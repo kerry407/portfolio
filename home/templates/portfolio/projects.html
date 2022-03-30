@@ -1,0 +1,63 @@
+{% load static %}
+
+
+     <!-- My works -->
+     <section class="works" id="work-link">
+        <div class="work-container">
+            <h2 class="fw-bold">THINGS I HAVE WORKED ON</h2>
+                <hr class="work-hr"><h5 class="chapter"> 05</h5> <hr class="work-hr mb-5">
+            <div class="d-lg-flex d-md-inline-flex d-sm-inline-flex justify-content-around">
+                <div class="work-img">
+                    <img src="{{proj_1.work_image.url}}" alt="" class="img-fluid">
+                </div>
+                <div class="work-outline">
+                    <div>
+                        <h3 class="project-title">{{proj_1.title}}</h3>
+                        <hr>
+                    </div>
+                    <div class="tech">
+                        <h3>TECH</h3>
+                        <div class="mt-3">
+                            <span>HTML/CSS</span> <span>Bootstrap</span> <span>JavaScript</span> <span>sweetalert.JS</span> <span>Python</span> <span>django</span> <span>Postgresql</span> <span>Psycopg2</span> <span>gunicorn</span> <span>AWS(EC2)</span> <span>Ubuntu</span> <span>Nginx</span> 
+                            <h5 class="fs-6 mt-3"><a href="https://github.com/kerry407/tulipblog.git" class=" text-decoration-none">link to Github<i class="fa-solid fa-link ms-3 text-secondary"></i></a></h5>
+                        </div>
+                    </div>
+                    <details class="mt-5">
+                        <summary class="fw-bold fs-3 text-secondary">About Project</summary>
+                        <p>
+                            {{proj_1.description}}
+                        </p>
+                    </details>  
+                </div>
+            </div>
+            <div class="d-lg-flex d-md-inline-flex d-sm-inline-flex flex-row-reverse justify-content-around">
+                <div class="work-img">
+                    <img src="{{proj_2.work_image.url}}" alt="" class="img-fluid">
+                </div>
+                <div class="work-outline">
+                    <div>
+                        <h3 class="project-title">{{proj_2.title}}</h3>
+                        <hr>
+                    </div>
+                    <div class="tech">
+                        <h3>TECH</h3>
+                        <div class="mt-3"  id="resume-link">
+                            <span>HTML/CSS</span> <span>Bootstrap</span> <span>JavaScript</span> <span>sweetalert.JS</span> <span>Python</span> <span>django</span> <span>Postgresql</span> <span>Psycopg2</span> <span>gunicorn</span> <span>AWS(EC2)</span> <span>Ubuntu</span> <span>Nginx</span> <span>Paystack API</span>
+                            <h5 class="fs-6 mt-3"><a href="https://github.com/kerry407/tangostore.git" class=" text-decoration-none">link to Github<i class="fa-solid fa-link ms-3 text-secondary"></i></a></h5>
+                        </div>
+                    </div>
+                    <details class="mt-5">
+                        <summary class="fw-bold fs-3 text-secondary">About Project</summary>
+                        <p>
+                            {{proj_2.description}}
+                        </p>
+                    </details>
+                </div>
+            </div>
+            <button class="btn hire"><a download href="{% static 'file/kerry cv.pdf' %}" class="text-decoration-none text-dark">Download Resume</a></button>
+            <div class="email-me">
+                <h5>What's next?</h5>
+                <p><a href="mailto:kerryonyeogo@gmail.com"><button>Get In Touch <I class="fa-solid fa-envelope ms-3"></I></button></a></p>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,48 @@
+{% load static %}
+
+     <!-- skills -->
+     <section class="skills" id="skill-link">
+        <div>
+            <h2 class="fw-bold">SKILLSET</h2>
+            <hr><h5 class="chapter"> 04</h5> <hr>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 pe-5 mb-5">
+                    <h4 class="mt-4">
+                        Some of my abilities:
+                    </h4>
+                    <h6 class="mt-2 skill-writeup">
+                        Below are lists of technologies I have been working
+                        with recently in my projects. These include both front-end and back-end technologies
+                        consisting of programming languages and frameworks. <br>
+                        Currently, I'm a full-stack python web developer but I am also open to learning new technologies as I progress in my career.
+                        Also, I have a good knowledge of working with API's in the python programming language database admins like postgresql and Dev-Ops 
+                        technologies like AWS(EC2) and Heroku.
+                    </h6>
+                </div>
+                <div class="col-lg-6 col-md-6 skill-box">
+                    <div class="skill-set d-flex">
+                        <div id="pro-skills-btn" class="me-1 text-center">Professional Skills</div>
+                        <div id="per-skills-btn" class=" ms-1 text-center">Personal Skills</div>
+                    </div>
+                    <div class="skill-outline row row-cols-3" id="pro-skills">
+                        {% for skills in tech %}
+                            <div class="col"><img src="{{skills.img_src}}"/><h5>{{skills.name}}</h5></div>
+                        {% endfor %}
+                    </div>
+                    <div class="skill-outline" id="per-skills">
+                        <ul>
+                            <li>
+                                One thing that is an integral part of me is learning. I can pick up new skills and quickly adapt which
+                                makes me a fast learner.
+                            </li><br>
+                            <li>
+                                It's usually great having me on your time. I always love to put effort in what I love. So I'm
+                                a great team player.
+                            </li><br>
+                            <li>Critical thinking while solving variety of tech problems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

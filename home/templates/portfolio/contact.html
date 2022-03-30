@@ -1,0 +1,29 @@
+{% load static %}
+
+     <!-- Contact me -->
+     <section class="contact" id="contact-link">
+        <div>
+            <h2 class="fw-bold">
+                CONTACT
+            </h2>
+            <hr><h5 class="chapter"> 06</h5> <hr>
+            <div class="row mt-5 form-div">
+                <div class="col-lg-6 col-md-6 mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20rd,%20Lagos,%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+                        </iframe><a href="https://123movies-to.org"></a><br><a href="https://www.embedgooglemap.net"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <form method="POST" action="" class="contact-form mt-5">
+                        {% csrf_token %}
+                            <input type="text" placeholder="&#xf007; Full name" name="fullname" required>
+                            <input type="email" placeholder="&#xf0e0; Email Address" name="email" required>
+                            <textarea id="" cols="30" rows="10" placeholder="&#xf27a; Place a message!" name="message" required></textarea>
+                            <button type='submit'>SEND MESSAGE   &#xf1d8;</i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
